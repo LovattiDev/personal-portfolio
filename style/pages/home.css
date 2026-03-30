@@ -60,7 +60,7 @@ body {
 
 /* IMAGEM */
 .profile-img {
-    background: url('../assets/home-assets/personal-img.png') center/cover;
+    background: url('../../assets/home-assets/personal-img.png') center/cover;
     border-radius: 24px;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .sidebar .thumb {
-    background: url('../assets/home-assets/workplace.jpg') center/cover;
+    background: url('../../assets/home-assets/workplace.jpg') center/cover;
     height: 200px;
     border-radius: 16px;
     margin: 14px 0;
