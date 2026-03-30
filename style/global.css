@@ -1,0 +1,21 @@
+/* RESET + BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0f0c;
+}
+
+hr {
+    margin: 40px 0px;
+    border: none;   
+    height: 2px;
+    background-color: #272525;
+}
+
+p {
+    text-align: justify;
+}

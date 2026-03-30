@@ -1,0 +1,115 @@
+.contact-container {
+    background: #d6d0c4;
+    margin: 100px 250px;
+    min-height: calc(100vh - 240px);
+    border-radius: 24px;
+    padding: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Lado esquerdo */
+.contact-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Lista horizontal de redes sociais */
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-list li {
+    margin: 0;
+}
+
+.social-list a {
+    text-decoration: none;
+    color: #272525;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.social-list li {
+    transition: transform 0.2s ease;
+}
+
+.social-list li:hover {
+    transform: scale(1.2);
+}
+
+#contact-email-text {
+    margin-top: 30px;
+}
+
+.contact-go-home {
+    margin-top: auto;
+    color: #272525;
+    transition: transform 0.2s ease;
+}
+
+.contact-go-home:hover {
+    transform: scale(1.2);
+}
+
+#contact-go-home-mobile {
+    display: none;
+}
+
+/* Lado direito */
+.contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background: #272525;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .contact-container {
+        margin: 50px 50px;
+        padding: 50px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+
+    #contact-go-home-desktop {
+        display: none;
+    }
+}

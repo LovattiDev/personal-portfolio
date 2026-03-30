@@ -1,0 +1,64 @@
+.professional-resume-container {
+    background: #d6d0c4;
+    margin: 100px 250px;
+    min-height: calc(100vh - 240px);
+    border-radius: 24px;
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.professional-resume-header {
+    width: 100%;
+}
+
+.professional-resume-go-home {
+    margin-top: auto;
+    color: #272525;
+    transition: transform 0.2s ease;
+}
+
+.professional-resume-go-home:hover {
+    transform: scale(1.2);
+}
+
+#professional-resume-title {
+    margin-top: 60px;
+}
+
+#professional-resume-subtitle {
+    font-size: 18px;
+}
+
+.professional-resume-social-medias {
+    display: flex;
+    flex-direction: column;
+}
+
+.professional-resume-h3 {
+    font-size: 25px;
+}
+
+.professional-resume-main-text {
+    margin-top: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .professional-resume-container {
+        margin: 50px 50px;
+        padding: 50px;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

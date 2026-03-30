@@ -1,0 +1,70 @@
+/* FONTE */
+@font-face {
+    font-family: 'TanHarmoni';
+    src: url('/assets/home-assets/TanHarmoni-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/assets/fonts/aileron/Aileron-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/assets/fonts/aileron/Aileron-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MinhaFonte', sans-serif;
+    color: #272525;
+}
+
+#hero-span-code {
+    font-family: 'TanHarmoni';
+    letter-spacing: -5px;
+    font-size: 150px;
+    transform: scaleX(0.6);
+    transform-origin: left;
+}
+
+h1 {
+    font-family: 'Aileron';
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'TanHarmoni';
+    display: inline-block;
+    transform: scaleX(0.6);
+    transform-origin: center;
+    width: 100%;
+    letter-spacing: -1px;
+    font-size: 55px;
+}
+
+p {
+    font-family: 'Aileron';
+    font-size: 17px;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: 'Aileron';
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Aileron';
+    font-size: 17px;
+    margin-bottom: 0.5em;
+    color: #272525;
+}

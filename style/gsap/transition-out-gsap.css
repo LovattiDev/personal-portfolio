@@ -1,0 +1,7 @@
+.transition-item {
+  will-change: transform, opacity;
+}
+
+.profile-img {
+  will-change: transform;
+}

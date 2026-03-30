@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/font.css">
+  <link rel="stylesheet" href="style/pages/home.css">
+  <link rel="stylesheet" href="style/gsap/initial-gsap.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header transition-item">
+      <div class="logo">MATHEUS AMORIM <strong>LOVATTI</strong></div>
+      <nav>
+        <a class="page-transition" class="page-transition-header" href="project.html">PROJECTS</a>
+        <a class="page-transition" href="#">ABOUT</a>
+        <a class="page-transition" href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero transition-item">
+
+      <span id="hero-span-code">CODE.</span>
+
+      <div class="hero-text-content">
+        <h1>MOBILE & BACKEND</h1>
+        <p>Coding with <strong>JAVA • SPRING BOOT • ANDROID • APIs • MICROSERVICES </strong></p>
+      </div>
+    </section>
+
+    <!-- Image -->
+    <div class="profile-img transition-zoom-out"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar transition-item">
+      <h3>DISCOVER</h3>
+      <div class="thumb"></div>
+      <ul>
+        <li><a class="page-transition" href="project.html">All Projects</a></li>
+        <li><a class="page-transition" href="professional-resume.html">Professional Resume</a></li>
+        <li><a class="page-transition" href="academic-resume.html">Academic Resume</a></li>
+      </ul>
+      <div class="socials">
+        <a href="https://github.com/LovattiDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matheus-amorim-lovatti-8a74a72b1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/matheus_lovatti/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="mailto:matheusamorimlovatti@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </aside>
+
+    <!-- About -->
+    <section class="about transition-item">
+      <div class="about-text">
+        <p>
+          I’m a software developer specializing in mobile and Java backend development, focused on building scalable applications and following solid engineering practices.
+        </p>
+
+        <p>
+          I’m currently pursuing a degree in Software Engineering, where I’m deepening my knowledge in system architecture, development, and building robust solutions.
+        </p>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="tech-stack">
+        <i class="devicon-java-plain"></i>
+        <i class="devicon-spring-plain"></i>
+        <i class="devicon-android-plain"></i>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact transition-item">
+      <a href="contact.html" class="contact-link page-transition">
+        <div class="contact-text">
+          <p>Have a Question??</p>
+          <p id="contact-click-here">Click Here!</p>
+        </div>
+        <h2 id="contact-title-desktop">CONTACT ME.</h2>
+        <h2 id="contact-title-mobile">CONTACT ME.<br><span>Click Here!</span></h2>
+      </a>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script/initial-animation.js"></script>
+  <script src="script/transition-out.js"></script>
+
+</body>
+</html>

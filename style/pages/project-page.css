@@ -1,0 +1,192 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 90vw;
+    max-width: 1200px;
+}
+
+/* HEADER */
+.header {
+    background: #d6d0c4;
+    padding: 30px 36px;
+    border-radius: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.contact-go-home {
+    margin-top: auto;
+    color: #272525;
+    transition: transform 0.2s ease;
+}
+
+.contact-go-home:hover {
+    transform: scale(1.2);
+}
+
+/* PROJETOS */
+.project {
+    background: #d6d0c4;
+    border-radius: 24px;
+    padding: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* DIREÇÃO */
+.project-left {
+    flex-direction: row;
+}
+
+.project-right {
+    flex-direction: row-reverse;
+}
+
+/* IMAGEM */
+.project img {
+    width: 420px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+/* CONTEÚDO */
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ALINHAMENTO DINÂMICO */
+.project-left .project-content {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.project-right .project-content {
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* DESCRIÇÃO */
+.project-description {
+    max-width: 400px;
+}
+
+/* TECNOLOGIAS */
+.project-tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.project-left .project-tech {
+    justify-content: flex-end;
+}
+
+.project-right .project-tech {
+    justify-content: flex-start;
+}
+
+.project-tech span {
+    background: #272525;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* LINKS */
+.project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* BOTÃO */
+.btn-outline {
+    text-decoration: none;
+    font-size: 13px;
+    color: #272525;
+
+    padding: 6px 14px;
+    border: 1px solid #272525;
+    border-radius: 999px;
+
+    transition: all 0.25s ease;
+}
+
+.btn-outline:hover {
+    background: #272525;
+    color: #fff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .project img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .project-content {
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .project-tech {
+        justify-content: flex-start !important;
+    }
+}
