@@ -34,15 +34,35 @@
             <!-- Lado direito: formulário -->
             <div class="contact-right">
                 <h1>CONTACT FORM</h1>
-                <form class="contact-form">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4b78defc-1e39-4098-8021-88b4c59df3c8">
+
+
+                    <!-- Tipo de contato -->
+                    <select name="contact_type" id="contactType" required>
+                        <option value="" disabled selected>Select Contact Type</option>
+                        <option value="client">Client (Project Inquiry)</option>
+                        <option value="recruiter">Recruiter</option>
+                        <option value="company">Company</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <!-- Campos padrão -->
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
+
+                    <!-- Campos dinâmicos -->
+                    <div id="dynamicFields"></div>
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+
                     <button type="submit">Send Message</button>
                 </form>
                 <a id="contact-go-home-mobile" class="contact-go-home" href="index.html"><i class="fa-solid fa-circle-left"> Go Home.</i></a>
             </div>
         </div>
     </section>
+
+    <script src="script/dinamic-fields.js"></script>
 </body>
 </html>
