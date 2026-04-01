@@ -189,10 +189,6 @@ body {
 
 }
 
-#contact-title-mobile {
-    display: none;
-}
-
 /* RESPONSIVIDADE */
 /* TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -239,10 +235,6 @@ body {
 
     h2 {
         font-size: 45px;
-    }
-
-    #contact-title-mobile {
-        display: none;
     }
 }
 
@@ -295,20 +287,20 @@ body {
     }
 
     .contact {
-        padding: 100px 20px;
-    }
-
-    .contact-text {
-        display: none;
-    }
-
-    #contact-title-desktop {
-        display: none;
-    }
-
-    #contact-title-mobile {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;        /* reduz aquele padding gigante */
+    }
+
+    .contact h2 {
+        position: static;          /* remove o absolute */
+        transform: none;           /* remove o scaleX */
+        font-size: 32px;           /* tamanho controlado */
+        text-align: center;
+        width: 100%;
+
+        margin-top: 10px;
     }
 
     span {
