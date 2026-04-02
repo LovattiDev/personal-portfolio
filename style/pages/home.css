@@ -266,6 +266,11 @@ body {
         grid-row: 2;
     }
 
+    #hero-span-code {
+        font-size: 125px;
+        margin-bottom: 40px;
+    }
+
     .profile-img {
         grid-column: 1;
         grid-row: 3 / span 2;
