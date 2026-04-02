@@ -44,6 +44,7 @@ body {
 }
 
 .contact-go-home {
+    margin-bottom: 1px;
     margin-top: auto;
     color: #272525;
     transition: transform 0.2s ease;
@@ -189,4 +190,18 @@ body {
     .project-tech {
         justify-content: flex-start !important;
     }
+
+    .header a {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+
+    .header nav a {
+        margin-left: 10px;
+    }
+
+    .contact-go-home {
+        margin-bottom: 0px;
+    }
+
 }
