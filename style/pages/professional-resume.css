@@ -62,3 +62,16 @@ ul {
         gap: 40px;
     }
 }
+
+@media (max-width: 767px) {
+    .professional-resume-container {
+        margin: 10px;         /* antes 50px 50px */
+        padding: 20px;        /* antes 50px */
+        gap: 20px;
+        border-radius: 16px;  /* opcional: melhora visual */
+    }
+
+    #professional-resume-title {
+        font-size: 26px;
+    }
+}
