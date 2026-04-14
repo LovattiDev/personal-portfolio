@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
 }
 
@@ -18,7 +18,7 @@ body {
     width: 90vw;
     max-width: 1600px;
 
-    height: 100%;
+    height: auto;
 }
 
 /* HEADER */
@@ -241,75 +241,49 @@ body {
 /* MOBILE */
 @media (max-width: 767px) {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 24px;
-    }
-
-    .header {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 20px;
     }
 
-    .logo {
-        font-size: 22px;
-    }
-
-    .hero {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }
-
-    #hero-span-code {
-        font-size: 125px;
-        margin-bottom: 40px;
+    .header,
+    .hero,
+    .profile-img,
+    .sidebar,
+    .about,
+    .contact {
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .profile-img {
-        grid-column: 1;
-        grid-row: 3 / span 2;
-    }
-
-    .sidebar {
-        grid-column: 2;
-        grid-row: 3 / span 2;
-    }
-
-    .socials {
-        margin-top: 20px;
-    }
-
-    .about {
-        grid-column: 1 / span 2;
-        grid-row: 5;
-        gap: 20px;
+        background: cover;
+        background-position: top center;
+        min-height: 350px;
     }
 
     .contact {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 40px 20px;        /* reduz aquele padding gigante */
+        text-align: center;
     }
 
     .contact h2 {
-        position: static;          /* remove o absolute */
-        transform: none;           /* remove o scaleX */
-        font-size: 32px;           /* tamanho controlado */
-        text-align: center;
-        width: 100%;
-
+        position: static;
+        transform: none;
+        font-size: 50px;
         margin-top: 10px;
     }
 
-    span {
-        font-size: 25px;
+    .contact-text {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .contact-text p {
+        font-size: 15px;
     }
 }
 
