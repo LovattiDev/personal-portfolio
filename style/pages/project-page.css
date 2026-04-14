@@ -169,6 +169,10 @@ body {
     color: #fff;
 }
 
+.project-transition-item {
+    opacity: 0;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
     .project {

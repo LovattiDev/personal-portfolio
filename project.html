@@ -16,73 +16,93 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- HEADER -->
-    <header class="header transition-item">
-        <a class="contact-go-home" href="index.html"><i class="fa-solid fa-circle-left"> Go Home.</i></a>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
+        <!-- HEADER -->
+        <header class="header project-transition-item">
+            <a class="contact-go-home" href="index.html"><i class="fa-solid fa-circle-left"> Go Home.</i></a>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
 
-    <!-- PROJETO 2 -->
-    <div class="project project-left">
-        <img src="assets/project-assets/project-marseguro-website-img.png" alt="Preview do projeto">
+        <!-- PROJETO 2 -->
+        <div class="project project-left project-transition-item">
+            <img src="assets/project-assets/project-marseguro-website-img.png" alt="Preview do projeto">
 
-        <div class="project-content">
-            <h3>MARSEGURO WEBSITE</h3>
+            <div class="project-content">
+                <h3>MARSEGURO WEBSITE</h3>
 
-            <p class="project-description">
-                Institutional website for presenting the MarSeguro Mobile App. Features a minimalist and
-                clean design, with interactive pages and focused, easy-to-access information.
-            </p>
-            <p>Open-Source Project</p>
+                <p class="project-description">
+                    Institutional website for presenting the MarSeguro Mobile App. Features a minimalist and
+                    clean design, with interactive pages and focused, easy-to-access information.
+                </p>
+                <p>Open-Source Project</p>
 
 
-            <div class="project-tech">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-            </div>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
 
-            <div class="project-links">
-                <a class="btn-outline" href="https://github.com/LovattiDev/MarSeguro-Website" target="_blank">GitHub</a>
-                <a class="btn-outline" href="https://lovattidev.github.io/MarSeguro-Website/" target="_blank">Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- PROJETO 1 -->
-    <div class="project project-right">
-        <img src="assets/project-assets/project-marseguro-img.png" alt="Preview do projeto">
-
-        <div class="project-content">
-            <h3>MARSEGURO</h3>
-
-            <p class="project-description">
-                <strong>Android mobile app for ocean navigation.</strong> Features include: historical accident alerts, integrated compass,
-                return-to-origin navigation, proximity warnings for high-risk areas, nautical map, and customizable
-                sailing settings. <strong>All features are native and work offline.</strong>
-            </p>
-            <p>Closed-Source Project</p>
-
-            <div class="project-tech">
-                <span>JAVA</span>
-                <span>ANDROID</span>
-                <span>GRADLE</span>
-                <span>SQLITE</span>
-            </div>
-
-            <div class="project-links">
-                <a class="btn-outline" href="assets/download/app-release.apk" download="marseguro-project.apk">APK Demo</a>
+                <div class="project-links">
+                    <a class="btn-outline" href="https://github.com/LovattiDev/MarSeguro-Website" target="_blank">GitHub</a>
+                    <a class="btn-outline" href="https://lovattidev.github.io/MarSeguro-Website/" target="_blank">Demo</a>
+                </div>
             </div>
         </div>
+
+        <!-- PROJETO 1 -->
+        <div class="project project-right project-transition-item">
+            <img src="assets/project-assets/project-marseguro-img.png" alt="Preview do projeto">
+
+            <div class="project-content">
+                <h3>MARSEGURO</h3>
+
+                <p class="project-description">
+                    <strong>Android mobile app for ocean navigation.</strong> Features include: historical accident alerts, integrated compass,
+                    return-to-origin navigation, proximity warnings for high-risk areas, nautical map, and customizable
+                    sailing settings. <strong>All features are native and work offline.</strong>
+                </p>
+                <p>Closed-Source Project</p>
+
+                <div class="project-tech">
+                    <span>JAVA</span>
+                    <span>ANDROID</span>
+                    <span>GRADLE</span>
+                    <span>SQLITE</span>
+                </div>
+
+                <div class="project-links">
+                    <a class="btn-outline" href="assets/download/app-release.apk" download="marseguro-project.apk">APK Demo</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script>
+        gsap.fromTo(".project-transition-item",
+            {
+                x: (i) => i % 2 === 0 ? -100 : 100,
+                y: 80,
+                opacity: 0
+            },
+            {
+                x: 0,
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.25,
+                ease: "power3.out"
+            }
+        );
+    </script>
 
 </body>
 </html>
